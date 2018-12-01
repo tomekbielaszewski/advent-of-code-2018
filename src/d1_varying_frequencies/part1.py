@@ -41,7 +41,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(-6, total)
 
     def test_finalSolution(self):
-        with open("part1.txt") as f:
+        with open("input.txt") as f:
             changes = f.readlines()
             total = Solution().calcFrequency(changes)
 
