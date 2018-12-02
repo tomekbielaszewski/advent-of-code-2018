@@ -2,3 +2,5 @@
 *.iml
 java/.gradle
 java/gradle*
+java/build
+java/out
