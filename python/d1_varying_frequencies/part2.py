@@ -6,7 +6,7 @@ ops = {
 }
 
 
-def findDuplicatedFrequency(changes):
+def find_duplicated_frequency(changes):
     total = 0
     already_seen = set()
     length = len(changes)
@@ -26,37 +26,37 @@ class TestSolution(unittest.TestCase):
 
     def test_example1(self):
         changes = ["+1", "-2", "+3", "+1"]
-        total = findDuplicatedFrequency(changes)
+        total = find_duplicated_frequency(changes)
 
         self.assertEqual(2, total)
 
     def test_example2(self):
         changes = ["+1", "-1"]
-        total = findDuplicatedFrequency(changes)
+        total = find_duplicated_frequency(changes)
 
         self.assertEqual(0, total)
 
     def test_example3(self):
         changes = ["+3", "+3", "+4", "-2", "-4"]
-        total = findDuplicatedFrequency(changes)
+        total = find_duplicated_frequency(changes)
 
         self.assertEqual(10, total)
 
     def test_example4(self):
         changes = ["-6", "+3", "+8", "+5", "-6"]
-        total = findDuplicatedFrequency(changes)
+        total = find_duplicated_frequency(changes)
 
         self.assertEqual(5, total)
 
     def test_example5(self):
         changes = ["+7", "+7", "-2", "-7", "-4"]
-        total = findDuplicatedFrequency(changes)
+        total = find_duplicated_frequency(changes)
 
         self.assertEqual(14, total)
 
     def test_finalSolution(self):
         with open("input.txt") as f:
             changes = f.readlines()
-            total = findDuplicatedFrequency(changes)
+            total = find_duplicated_frequency(changes)
 
             print(total)
